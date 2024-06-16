@@ -174,7 +174,7 @@ TEST_CASE("Player operations") {
     }
 
     SUBCASE("Check correct flooring") {
-        Coordinate negativeLoc(-2, 100, -2);
+        Coordinate negativeLoc(-1, 100, -2);
         mc.doCommand("tp -2 100 -2");
         CHECK_EQ(mc.getPlayerPosition(), negativeLoc);
     }
