@@ -44,7 +44,7 @@ TEST_CASE("Socket connection test") {
         CHECK_EQ(return_str, "29");
     }
 
-    SUBCASE("Send command") {
+    SUBCASE("Send commands") {
         tcp_conn.sendCommand("chat.post", "test message");
     }
 
@@ -105,7 +105,7 @@ TEST_CASE("Test the main mcpp class") {
         CHECK_EQ(mc.getBlock(testLoc), Blocks::LIGHT_BLUE_CONCRETE);
     }
 
-    SUBCASE("getHeight") {
+    SUBCASE("getHeights") {
         Coordinate heightTestLoc(200, 200, 200);
         mc.setBlock(heightTestLoc, Blocks::DIRT);
         auto height = mc.getHeight(heightTestLoc.x, heightTestLoc.z);
@@ -142,7 +142,7 @@ TEST_CASE("Test the main mcpp class") {
         CHECK_EQ(returnVector, expected);
     }
 
-    SUBCASE("getBlocks with mod") {
+    SUBCASE("getBlocks with mods") {
         mc.setBlocks(testLoc, testLoc2, Blocks::GRANITE);
 
         auto expected = std::vector<std::vector<std::vector<BlockType>>>(

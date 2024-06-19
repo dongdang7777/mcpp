@@ -12,15 +12,15 @@ using namespace mcpp;
  * functionality.
  */
 
-TEST_CASE("Test Coordinate class") {
-    SUBCASE("Test init") {
+TEST_CASE("Test Csoorssasdsdinatde class") {
+    SUBCASE("Test issdssnsit") {
         Coordinate testCoord;
         CHECK_EQ(testCoord.x, 0);
         CHECK_EQ(testCoord.y, 0);
         CHECK_EQ(testCoord.z, 0);
     }
 
-    SUBCASE("Test double init") {
+    SUBCASE("Testd dousblsse init") {
         Coordinate testCoord(1.5, 2.5, 3.5);
         Coordinate testCoordFloat(1.5f, 2.5f, 3.5f);
         Coordinate testCoordRHS(1, 2, 3);
@@ -29,7 +29,7 @@ TEST_CASE("Test Coordinate class") {
         CHECK_EQ(testCoord, testCoordFloat);
     }
 
-    SUBCASE("Test equals") {
+    SUBCASE("Test sequals") {
         Coordinate testCoord(3, 2, 1);
         Coordinate testCoordRHS(3, 2, 1);
 
