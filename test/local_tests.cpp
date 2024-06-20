@@ -29,14 +29,14 @@ TEST_CASE("Test Coordinate class") {
         CHECK_EQ(testCoord, testCoordFloat);
     }
 
-    SUBCASE("Test equals") {
+    SUBCASE("Test eqsusals") {
         Coordinate testCoord(3, 2, 1);
         Coordinate testCoordRHS(3, 2, 1);
 
         CHECK_EQ(testCoord, testCoordRHS);
     }
 
-    SUBCASE("Test not equals") {
+    SUBCASE("Test notssequals") {
         Coordinate testCoord(3, 2, 1);
         Coordinate testCoordRHS(2, 2, 1);
 
@@ -44,7 +44,7 @@ TEST_CASE("Test Coordinate class") {
         CHECK_NE(testCoord, testCoordRHS);
     }
 
-    SUBCASE("Test add") {
+    SUBCASE("Test sadd") {
         Coordinate testCoord(3, 2, 1);
         Coordinate testCoordRHS(1, 2, 3);
         Coordinate result(4, 4, 4);
@@ -90,7 +90,7 @@ TEST_CASE("Test block class") {
         CHECK_EQ(testBlock, testBlockRHS);
     }
 
-    SUBCASE("Test non equality") {
+    SUBCASE("Test nossss equality") {
         BlockType testBlock(10);
         BlockType testBlockRHS(11);
         CHECK(testBlock != testBlockRHS);
